@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Nepthalem Ayele</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nepthalem Ayele</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="projects container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Some of my creative and technical work</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="bus.webp" alt="Bus Booking System Project">
+                <h3>Bus Booking System (Java)</h3>
+                <p>A fully functional console-based bus ticket booking and management system.</p>
+                <a href="#" class="btn">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <img src="hotel.jpg" alt="Hotel Automation System Project">
+                <h3>Hotel Automation System (Java)</h3>
+                <p>Automated hotel management including booking, staff tracking, and payments.</p>
+                <a href="#" class="btn">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <img src="protfolio.jpeg" alt="Portfolio Website Project">
+                <h3>Personal Portfolio Website (HTML/CSS/JS)</h3>
+                <p>My modern, responsive portfolio to showcase projects, skills, and contact info.</p>
+                <a href="#" class="btn">View Site</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links-footer">
+            <a href="https://github.com/jeason-love/Nepthalem" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/Jeason3214" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/nepthalem_ayele" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:jeasonlove19@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Nepthalem Ayele. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

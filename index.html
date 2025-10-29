@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepthalem Ayele | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nepthalem Ayele</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home container">
+        <div class="home-content">
+            <h1>Hello, I'm <span class="name">Nepthalem Ayele</span></h1>
+            <p class="subtitle">Junior Programmer | 3rd-year Computer Science Student | Creative Developer</p>
+            <a href="projects.html" class="btn">See My Work</a>
+
+        </div>
+
+        <div class="home-image">
+            <img src="profilepic.png" alt="Creative workspace">
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links-footer">
+            <a href="https://github.com/jeason-love/Nepthalem" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/Jeason3214" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/nepthalem_ayele" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:jeasonlove19@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Nepthalem Ayele. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
